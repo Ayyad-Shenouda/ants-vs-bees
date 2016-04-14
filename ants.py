@@ -198,7 +198,7 @@ class ThrowerAnt(Ant):
         """
         number_of_place = 0
         placeOfNearstBee = self.place
-        while number_of_place < self.min_range:
+        while number_of_place < self.min_range and placeOfNearstBee != None:
         	number_of_place += 1;
         	placeOfNearstBee = placeOfNearstBee.entrance
         while placeOfNearstBee != None and(number_of_place <= self.max_range or self.max_range < 0):
